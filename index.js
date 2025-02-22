@@ -17,7 +17,7 @@ mongoose.connect('mongodb://localhost:27017/myDB', {useNewUrlParser: true, useUn
     console.log('Failed to connect to My  MongoDB', err);
     }); 
 
-
+// **********************************
 
 app.get('/hello', (req, res) => {
     res.send('Hello World!');
@@ -140,6 +140,6 @@ app.get("/showArticle", async(req, res) => {
 
 app.listen(port, () => {
     console.log(`Server is running at http://localhost:${port}`);
-    
+
     }); 
 
