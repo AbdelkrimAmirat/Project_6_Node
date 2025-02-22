@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style = "background-color: orange; padding : 10px; border-radius: 5px;"> Hello World From The Server Side </h1>
+    <p style = "background-color: rgb(0, 140, 255); padding : 10px; border-radius: 5px;">
+        Amirat is a good person in Algeria
+        
+        and Abdelkrime is a good too, 
+        i forget that Abdelkader also is a good person.
+    </p>
+    <h5> All Articles Page </h5>
+    <hr/>
+    <h3> Articles </h3>
+    <div style = "background-color: orange; padding : 10px; border-radius: 5px;">
+        
+        
+
+        <% for(let article of allArticles) { %>
+            <h4><%= article.title %> </h4>
+            <h4><%= article.content %> </h4>
+            <h4><%= article.nbrOfLikes %> </h4>
+            <%  %>
+            <hr/>
+
+        <% } %>
+        
+    </div>
+
+</body>
+</html>
